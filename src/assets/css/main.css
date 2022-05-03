@@ -11,6 +11,41 @@ body{
 #header{
     height: 65px;
     background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#searchText-container{
+    height: 60%;
+    margin-right: 15px;
+    border-radius: 20px;
+    background-color: #000;
+    width: 30%;
+    display: flex;
+    position: relative;
+}
+
+#searchText{
+    align-items: center;
+    width: 60%;
+    border-style: hidden;
+    height: 80%;
+    margin: auto;
+}
+
+#recorderBtn{
+    width: 30px;
+    height: 30px;
+    padding: auto;
+    margin: auto;
+    cursor: pointer;
+}
+
+#searchBtn{
+    width: 20px;
+    height: 20px;
+    padding: auto;
+    margin: auto;
 }
 
 #logo{
@@ -139,7 +174,7 @@ h1, button{
     width: 100%;
   }
   
-  #clearBtn{
+  .clearBtn{
     text-align: center;
     cursor: pointer;
     font-size:24px;
@@ -161,7 +196,7 @@ h1, button{
     color: #000;
 }
 
-#startBtn{
+.btn{
     padding: 0.8rem 2rem;
     border: none;
     margin-left: 15px;
@@ -169,55 +204,39 @@ h1, button{
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
-    background-color: #42b72a;
     color: white;
     transition: all 300ms ease-in-out;
-    transform: translateY(0);
+    transform: translateY(0);  
+}
+#startBtn{
+    background-color: #42b72a;
 }
 
 #stopBtn{
-    padding: 0.8rem 2rem;
-    border: none;
     background-color: #df3636;
-    margin-left: 15px;
-    font-size: 1rem;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: all 300ms ease-in-out;
-    transform: translateY(0);
 }
 
 #transcribeBtn{
-    padding: 0.8rem 2rem;
-    border: none;
-    margin-top: 10px;
     background-color: #ceb21e;
-    margin-left: 15px;
-    font-size: 1rem;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: all 300ms ease-in-out;
-    transform: translateY(0);
 }
 
-#clearBtn{
-    padding: 0.8rem 2rem;
-    border: none;
-    margin-top: 10px;
+.clearBtn{
     background-color: #020e18;
-    margin-left: 15px;
-    font-size: 1rem;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: all 300ms ease-in-out;
-    transform: translateY(0);
 }
+
+#getRandomText{
+    background-color: #0689f5;
+}
+
+#inputBtn{
+    background-color: #0689f5;
+}
+
+#compareBtn{
+    background-color: #e01832;
+
+}
+
 #video-container{
     height: 80px;
     text-align: center;
@@ -236,19 +255,20 @@ video{
 
 
 
-#transcript{
+.transcript{
     width: 80%;
     margin: auto;
     margin-top: 10px;
-    background-color: #ccc;
+    background-color: #f5d9d9;
     padding: 10px;
     border: 2px dashed #000;
 }
 
-#transcript p{
+.transcript p{
     width: 100%;
     font-size: 20px;
     color: #000;
     font-style: italic;
 }
+
 
